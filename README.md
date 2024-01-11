@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [You are already here](https://github.com/Techkie-Creations/coding-bootcamp-frontendmentor)
-- Live Site URL: [Intro Component With Signup Frontend Mentor](https://techkie-creations.github.io/coding-bootcamp-frontendmentor)
+- Solution URL: [You are already here](https://github.com/Techkie-Creations/intro-component-frontendmentor)
+- Live Site URL: [Intro Component With Signup Frontend Mentor](https://techkie-creations.github.io/intro-component-frontendmentor)
 
 ## My process
 
