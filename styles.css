@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* GLOBALS */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./images/bg-intro-desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* MAIN */
+
+main.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 0 10rem;
+    transition: padding 2s;
+}
+
+/* MAIN LEFT */
+
+.left {
+    color: white;
+}
+
+.left .title {
+    font-size: calc(100% * 4);
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+/* MAIN RIGHT */
+
+.right {
+    width: 80%;
+    transition: width 2s;
+}
+
+/* RIGHT - TOP */
+
+.top {
+    text-align: center;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    background-color: hsl(248, 32%, 49%);
+    color: hsl(246, 25%, 77%);
+    padding: .3rem;
+    font-size: .8rem;
+}
+
+.top .trial span {
+    color: white;
+    font-weight: 600;
+}
+
+/* RIGHT - BOTTOM */
+
+.bottom {
+    padding: 2rem;
+    border-radius: .5rem;
+    background-color: white;
+}
+
+/* BOTTOM FORM */
+
+.bottom form {
+    width: 100%;
+}
+
+.bottom form input {
+    width: 100%;
+    padding: 1rem 0 1rem 2rem;
+    border-radius: .3rem;
+    border: 1px solid hsl(246, 25%, 77%);
+    font-weight: 600;
+    outline: none;
+    box-shadow: none !important;
+    margin-top: 1rem;
+    display: block;
+}
+
+.bottom form input:focus {
+    border: 1.5px solid hsl(248, 32%, 49%);
+}
+
+/* FORM BUTTON */
+
+.bottom form button {
+    margin: 1rem auto;
+    width: 100%;
+    padding: 1.1rem;
+    border: none;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    border-radius: .3rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    box-shadow: 0px 3px 3px hsl(154, 59%, 51%);
+    text-transform: uppercase;
+}
+
+.bottom form button:active {
+    scale: .9;
+}
+
+/* BOTTOM TEXT */
+
+.bottom p.terms {
+    margin-top: .1rem;
+    text-align: center;
+    font-size: .7rem;
+    color: hsl(246, 25%, 77%);
+}
+
+.bottom .terms .terms-link {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+/* RIGHT - TOP & BOTTOM */
+
+.top, .bottom {
+    box-shadow: 0px 3px 5px hsl(249, 10%, 26%);
+}
+
+/* FOOTER */
+
+footer {
+	text-align: center;
+	color: white;
+}
+
+footer .avatar {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	object-position: 0rem 0.01rem;
+	object-fit: cover;
+}
+
+footer .attribution a {
+	text-decoration: none;
+	color: hsl(248, 32%, 49%);
+}
+
+footer .attribution a:hover {
+	color: hsl(240, 50%, 71%);
+}
+
+footer p.copy {
+	font-weight: 700;
+    color: hsl(249, 10%, 26%);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1280px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 12rem;
+    }
+
+    main.main {
+        flex-wrap: wrap;
+        padding: 0 5rem;
+    }
+
+    .left {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    body {
+        gap: 18rem;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 617px) {
+    body {
+        gap: 22rem;
+    }
+
+    main.main {
+        padding: 0 3rem;
+    }
+}
